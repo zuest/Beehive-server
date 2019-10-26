@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>On Trip</title>
+    <style id="applicationStylesheet" type="text/css">
+
+        .mediaViewInfo {
+            --web-view-name: On Trip;
+            --web-view-id: On_Trip;
+            --web-enable-deep-linking: true;
+        }
+
+        :root {
+            --web-view-ids: On_Trip;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        #On_Trip {
+            position: absolute;
+            box-sizing: border-box;
+            background: #E5E5E5;
+            width: 1080px;
+            height: 1904px;
+            background-color: rgba(26,35,126,1);
+            overflow: hidden;
+            --web-view-name: On Trip;
+            --web-view-id: On_Trip;
+            --web-enable-deep-linking: true;
+        }
+
+        #news {
+            position: absolute;
+            width: 682px;
+            height: 376px;
+            left: 88px;
+            top: 557px;
+            overflow: visible;
+        }
+
+        #Update {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+            width: 127px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            color: rgba(255,255,255,1);
+        }
+
+        #card {
+            position: absolute;
+            width: 682px;
+            height: 304px;
+            left: 0px;
+            top: 72px;
+            overflow: visible;
+        }
+
+        .bg {
+            filter: drop-shadow(0px 4px 16px rgba(69, 91, 99, 0.078));
+            position: absolute;
+            overflow: visible;
+            width: 666px;
+            height: 350px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #content {
+            position: absolute;
+            width: 347px;
+            height: 216px;
+            left: 51px;
+            top: 53px;
+            overflow: visible;
+        }
+
+        #Check_Point {
+            position: absolute;
+            left: 0px;
+            top: 33px;
+            overflow: visible;
+            width: 174px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            color: rgba(69,79,99,1);
+        }
+
+        #ID8_45 {
+            opacity: 0.56;
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            overflow: visible;
+            width: 46px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            color: rgba(69,79,99,1);
+        }
+
+        #You_can_t_fall_if_you_don_t_cl {
+            position: absolute;
+            left: 0px;
+            top: 90px;
+            overflow: hidden;
+            width: 348px;
+            height: 126px;
+            line-height: 20px;
+            margin-top: -4px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(120,132,158,1);
+        }
+
+        .photo {
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.161));
+            position: absolute;
+            overflow: visible;
+            width: 296px;
+            height: 296px;
+            left: 431px;
+            top: 25px;
+        }
+
+        #news_A13_Group_3 {
+            position: absolute;
+            width: 682px;
+            height: 377px;
+            left: 88px;
+            top: 945px;
+            overflow: visible;
+        }
+
+        #Update_A13_Text_5 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+            width: 127px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            color: rgba(255,255,255,1);
+        }
+
+        #card_A13_Component_2 {
+            position: absolute;
+            width: 682px;
+            height: 303px;
+            left: 0px;
+            top: 74px;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_4 {
+            filter: drop-shadow(0px 4px 16px rgba(69, 91, 99, 0.078));
+            position: absolute;
+            overflow: visible;
+            width: 666px;
+            height: 350px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #content_A13_Group_4 {
+            position: absolute;
+            width: 347px;
+            height: 216px;
+            left: 51px;
+            top: 53px;
+            overflow: visible;
+        }
+
+        #Flight_Gate_ {
+            position: absolute;
+            left: 0px;
+            top: 33px;
+            overflow: visible;
+            width: 166px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            color: rgba(69,79,99,1);
+        }
+
+        #ID8_30 {
+            opacity: 0.56;
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            overflow: visible;
+            width: 46px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            color: rgba(69,79,99,1);
+        }
+
+        #You_can_t_fall_if_you_don_t_cl_A13_Text_8 {
+            position: absolute;
+            left: 0px;
+            top: 90px;
+            overflow: hidden;
+            width: 348px;
+            height: 126px;
+            line-height: 20px;
+            margin-top: -4px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(120,132,158,1);
+        }
+
+        .photo_A13_Rectangle_5 {
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.161));
+            position: absolute;
+            overflow: visible;
+            width: 296px;
+            height: 296px;
+            left: 431px;
+            top: 25px;
+        }
+
+        #news_A13_Group_5 {
+            position: absolute;
+            width: 682px;
+            height: 376px;
+            left: 88px;
+            top: 1334px;
+            overflow: visible;
+        }
+
+        #Update_A13_Text_9 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+            width: 127px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            color: rgba(255,255,255,1);
+        }
+
+        #card_A13_Component_3 {
+            position: absolute;
+            width: 682px;
+            height: 302px;
+            left: 0px;
+            top: 74px;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_7 {
+            filter: drop-shadow(0px 4px 16px rgba(69, 91, 99, 0.078));
+            position: absolute;
+            overflow: visible;
+            width: 666px;
+            height: 350px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #content_A13_Group_6 {
+            position: absolute;
+            width: 347px;
+            height: 216px;
+            left: 51px;
+            top: 53px;
+            overflow: visible;
+        }
+
+        #Flight_Gate__A13_Text_10 {
+            position: absolute;
+            left: 0px;
+            top: 33px;
+            overflow: visible;
+            width: 166px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            color: rgba(69,79,99,1);
+        }
+
+        #ID8_30_A13_Text_11 {
+            opacity: 0.56;
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            overflow: visible;
+            width: 46px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 23px;
+            color: rgba(69,79,99,1);
+        }
+
+        #You_can_t_fall_if_you_don_t_cl_A13_Text_12 {
+            position: absolute;
+            left: 0px;
+            top: 90px;
+            overflow: hidden;
+            width: 348px;
+            height: 126px;
+            line-height: 20px;
+            margin-top: -4px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(120,132,158,1);
+        }
+
+        .photo_A13_Rectangle_8 {
+            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.161));
+            position: absolute;
+            overflow: visible;
+            width: 296px;
+            height: 296px;
+            left: 431px;
+            top: 25px;
+        }
+
+        #top {
+            position: absolute;
+            width: 1050px;
+            height: 544px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+
+        #progress {
+            position: absolute;
+            width: 916px;
+            height: 17px;
+            left: 67px;
+            top: 527px;
+            overflow: visible;
+        }
+
+        #bar {
+            opacity: 0.195;
+        }
+
+        .bar {
+            position: absolute;
+            overflow: visible;
+            width: 916px;
+            height: 17px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .bar_A13_Rectangle_11 {
+            position: absolute;
+            overflow: visible;
+            width: 597px;
+            height: 17px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #ID9_51 {
+            position: absolute;
+            left: 896px;
+            top: 376px;
+            overflow: visible;
+            width: 87px;
+            white-space: nowrap;
+            line-height: 61px;
+            margin-top: -8.5px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 44px;
+            color: rgba(255,255,255,1);
+        }
+
+        #Emigration_ {
+            position: absolute;
+            left: 67px;
+            top: 359px;
+            overflow: visible;
+            width: 567px;
+            white-space: nowrap;
+            line-height: 123px;
+            margin-top: -5.5px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 112px;
+            color: rgba(255,255,255,1);
+        }
+
+        #icond_filter_light {
+            position: absolute;
+            width: 67px;
+            height: 67px;
+            left: 916px;
+            top: 157px;
+            display: none;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_12 {
+            position: absolute;
+            overflow: visible;
+            width: 67px;
+            height: 67px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .path {
+            overflow: visible;
+            position: absolute;
+            width: 50.397px;
+            height: 39.197px;
+            left: 8.399px;
+            top: 13.999px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #icons_back_light {
+            position: absolute;
+            width: 67px;
+            height: 67px;
+            left: 67px;
+            top: 157px;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_13 {
+            position: absolute;
+            overflow: visible;
+            width: 67px;
+            height: 67px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .icon {
+            overflow: visible;
+            position: absolute;
+            width: 45.223px;
+            height: 38.738px;
+            left: 10.773px;
+            top: 14.189px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #status_bar_dark {
+            position: absolute;
+            width: 1050px;
+            height: 123px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+
+        .Background {
+            overflow: visible;
+            position: absolute;
+            width: 1049.93px;
+            height: 123.192px;
+            left: 0px;
+            top: 0px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #Battery {
+            position: absolute;
+            width: 68.114px;
+            height: 31.731px;
+            left: 940.737px;
+            top: 48.53px;
+            overflow: visible;
+        }
+
+        #Border {
+            position: absolute;
+            width: 61.596px;
+            height: 31.731px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+
+        #Cap {
+            position: absolute;
+            width: 3.718px;
+            height: 11.199px;
+            left: 64.396px;
+            top: 10.266px;
+            overflow: visible;
+        }
+
+        #Capacity {
+            position: absolute;
+            width: 50.397px;
+            height: 20.532px;
+            left: 5.6px;
+            top: 5.6px;
+            overflow: visible;
+        }
+
+        #Wifi {
+            position: absolute;
+            width: 42.76px;
+            height: 30.702px;
+            left: 883.883px;
+            top: 48.523px;
+            overflow: visible;
+        }
+
+        #Wifi_A13_Group_14 {
+            position: absolute;
+            width: 42.76px;
+            height: 30.702px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+
+        #Cellular_Connection {
+            position: absolute;
+            width: 47.597px;
+            height: 29.865px;
+            left: 822.212px;
+            top: 49.463px;
+            overflow: visible;
+        }
+
+        #Cellular_Connection_A13_Group_16 {
+            position: absolute;
+            width: 47.597px;
+            height: 29.865px;
+            left: 0px;
+            top: 0px;
+            overflow: visible;
+        }
+
+        #Bars___Time_Black {
+            position: absolute;
+            width: 151.19px;
+            height: 44.797px;
+            left: 55.996px;
+            top: 41.997px;
+            overflow: visible;
+        }
+
+        .Background_A13_Path_13 {
+            overflow: visible;
+            position: absolute;
+            width: 151.19px;
+            height: 44.797px;
+            left: 0px;
+            top: 0px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        .__Time {
+            overflow: visible;
+            position: absolute;
+            width: 76.858px;
+            height: 28.977px;
+            left: 35.903px;
+            top: 13.69px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #row {
+            position: absolute;
+            width: 415px;
+            height: 81px;
+            left: 0px;
+            top: 196px;
+            display: none;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_14 {
+            position: absolute;
+            overflow: visible;
+            width: 375px;
+            height: 80px;
+            left: 0px;
+            top: 0px;
+        }
+
+        #Alexa {
+            position: absolute;
+            left: 88px;
+            top: 23px;
+            overflow: visible;
+            width: 41px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            color: rgba(253,254,255,1);
+        }
+
+        #ID4_5_stars {
+            position: absolute;
+            left: 88px;
+            top: 46px;
+            overflow: visible;
+            width: 55px;
+            white-space: nowrap;
+            line-height: 20px;
+            margin-top: -3px;
+            text-align: left;
+            font-family: Gibson;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(255,255,255,0.565);
+        }
+
+        #divider {
+            opacity: 0.054;
+        }
+
+        .divider {
+            position: absolute;
+            overflow: visible;
+            width: 327px;
+            height: 1px;
+            left: 88px;
+            top: 80px;
+        }
+
+        .avatar {
+            position: absolute;
+            overflow: visible;
+            width: 48px;
+            height: 48px;
+            left: 24px;
+            top: 16px;
+        }
+
+        #call {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 263px;
+            top: 16px;
+            display: none;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_18 {
+            position: absolute;
+            overflow: visible;
+            width: 40px;
+            height: 40px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .phone_1 {
+            overflow: visible;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 13.077px;
+            top: 12.077px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #message {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 311px;
+            top: 16px;
+            display: none;
+            overflow: visible;
+        }
+
+        .bg_A13_Rectangle_19 {
+            position: absolute;
+            overflow: visible;
+            width: 40px;
+            height: 40px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .envelope {
+            overflow: visible;
+            position: absolute;
+            width: 16px;
+            height: 12.444px;
+            left: 12.077px;
+            top: 14.615px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        #Group_767 {
+            position: absolute;
+            width: 184px;
+            height: 184px;
+            left: 848px;
+            top: 1583px;
+            overflow: visible;
+        }
+
+        .Ellipse_29 {
+            position: absolute;
+            overflow: visible;
+            width: 184px;
+            height: 184px;
+            left: 0px;
+            top: 0px;
+        }
+
+        .Icon_awesome_map_marked_alt {
+            overflow: visible;
+            position: absolute;
+            width: 114.914px;
+            height: 102.146px;
+            left: 36.488px;
+            top: 38.087px;
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        .Screen_Shot_2019_10_25_at_8_00 {
+            position: absolute;
+            overflow: visible;
+            width: 1080px;
+            height: 336px;
+            left: 1px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="On_Trip" class="">
+        <div id="news">
+            <div id="Update">
+                <span>Update</span>
+            </div>
+            <div id="card" class="card">
+                <svg class="bg">
+                    <rect fill="rgba(255,255,255,1)" id="bg" rx="12" ry="12" x="0" y="0" width="618" height="302">
+                    </rect>
+                </svg>
+                <div id="content">
+                    <div id="Check_Point">
+                        <span>Check Point</span>
+                    </div>
+                    <div id="ID8_45">
+                        <span>8:45</span>
+                    </div>
+                    <div id="You_can_t_fall_if_you_don_t_cl">
+                        <span>You can’t fall if you don’t climb. But there’s no joy in living your whole life on the ground.</span>
+                    </div>
+                </div>
+                <svg class="photo">
+                    <pattern elementId="photo_A13_Rectangle_3" id="photo_A13_Rectangle_3_pattern" x="0" y="0" width="100%" height="100%">
+                        <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/photo_A13_Rectangle_3_pattern.png" xlink:href="assets/img/mobile/photo_A13_Rectangle_3_pattern.png"></image>
+                    </pattern>
+                    <rect fill="url(#photo_A13_Rectangle_3_pattern)" id="photo" rx="12" ry="12" x="0" y="0" width="251" height="251">
+                    </rect>
+                </svg>
+            </div>
+        </div>
+        <div id="news_A13_Group_3">
+            <div id="Update_A13_Text_5">
+                <span>Update</span>
+            </div>
+            <div id="card_A13_Component_2" class="card">
+                <svg class="bg_A13_Rectangle_4">
+                    <rect fill="rgba(255,255,255,1)" id="bg_A13_Rectangle_4" rx="12" ry="12" x="0" y="0" width="618" height="302">
+                    </rect>
+                </svg>
+                <div id="content_A13_Group_4">
+                    <div id="Flight_Gate_">
+                        <span>Flight Gate </span>
+                    </div>
+                    <div id="ID8_30">
+                        <span>8:30</span>
+                    </div>
+                    <div id="You_can_t_fall_if_you_don_t_cl_A13_Text_8">
+                        <span>You can’t fall if you don’t climb. But there’s no joy in living your whole life on the ground.</span>
+                    </div>
+                </div>
+                <svg class="photo_A13_Rectangle_5">
+                    <pattern elementId="photo_A13_Rectangle_6" id="photo_A13_Rectangle_6_pattern" x="0" y="0" width="100%" height="100%">
+                        <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/photo_A13_Rectangle_6_pattern.png" xlink:href="assets/img/mobile/photo_A13_Rectangle_6_pattern.png"></image>
+                    </pattern>
+                    <rect fill="url(#photo_A13_Rectangle_6_pattern)" id="photo_A13_Rectangle_5" rx="12" ry="12" x="0" y="0" width="251" height="251">
+                    </rect>
+                </svg>
+            </div>
+        </div>
+        <div id="news_A13_Group_5">
+            <div id="Update_A13_Text_9">
+                <span>Update</span>
+            </div>
+            <div id="card_A13_Component_3" class="card">
+                <svg class="bg_A13_Rectangle_7">
+                    <rect fill="rgba(255,255,255,1)" id="bg_A13_Rectangle_7" rx="12" ry="12" x="0" y="0" width="618" height="302">
+                    </rect>
+                </svg>
+                <div id="content_A13_Group_6">
+                    <div id="Flight_Gate__A13_Text_10">
+                        <span>Flight Gate </span>
+                    </div>
+                    <div id="ID8_30_A13_Text_11">
+                        <span>8:30</span>
+                    </div>
+                    <div id="You_can_t_fall_if_you_don_t_cl_A13_Text_12">
+                        <span>You can’t fall if you don’t climb. But there’s no joy in living your whole life on the ground.</span>
+                    </div>
+                </div>
+                <svg class="photo_A13_Rectangle_8">
+                    <pattern elementId="photo_A13_Rectangle_9" id="photo_A13_Rectangle_9_pattern" x="0" y="0" width="100%" height="100%">
+                        <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/photo_A13_Rectangle_9_pattern.png" xlink:href="assets/img/mobile/photo_A13_Rectangle_9_pattern.png"></image>
+                    </pattern>
+                    <rect fill="url(#photo_A13_Rectangle_9_pattern)" id="photo_A13_Rectangle_8" rx="12" ry="12" x="0" y="0" width="251" height="251">
+                    </rect>
+                </svg>
+            </div>
+        </div>
+        <div id="top">
+            <div id="progress">
+                <svg class="bar">
+                    <rect fill="rgba(255,255,255,1)" id="bar" rx="8.5" ry="8.5" x="0" y="0" width="916" height="17">
+                    </rect>
+                </svg>
+                <svg class="bar_A13_Rectangle_11">
+                    <rect fill="rgba(58,204,225,1)" id="bar_A13_Rectangle_11" rx="8.5" ry="8.5" x="0" y="0" width="597" height="17">
+                    </rect>
+                </svg>
+            </div>
+            <div id="ID9_51">
+                <span>9:51</span>
+            </div>
+            <div id="Emigration_">
+                <span>Emigration </span>
+            </div>
+            <div id="icond_filter_light" class="icond_filter_light">
+                <svg class="bg_A13_Rectangle_12">
+                    <rect fill="transparent" id="bg_A13_Rectangle_12" rx="0" ry="0" x="0" y="0" width="67" height="67">
+                    </rect>
+                </svg>
+                <svg class="path" viewBox="2.5 3 50.397 39.197">
+                    <path fill="rgba(255,255,255,1)" id="path" d="M 4.790755748748779 7.355263233184814 C 3.416302680969238 7.355263233184814 2.5 6.484212398529053 2.5 5.177631855010986 C 2.5 3.871052265167236 3.416302680969238 3.000000476837158 4.790755748748779 3.000000476837158 L 50.60586929321289 3.000000476837158 C 51.98032379150391 3.000000476837158 52.89662551879883 3.871052265167236 52.89662551879883 5.177631855010986 C 52.89662551879883 6.484212398529053 51.98032379150391 7.355263233184814 50.60586929321289 7.355263233184814 L 4.790755748748779 7.355263233184814 L 4.790755748748779 7.355263233184814 Z M 11.66302490234375 19.33223915100098 C 10.28857040405273 19.33223915100098 9.37226676940918 18.46118927001953 9.37226676940918 17.15460777282715 C 9.37226676940918 15.8480281829834 10.28857040405273 14.97697830200195 11.66302490234375 14.97697830200195 L 43.73360824584961 14.97697830200195 C 45.10805511474609 14.97697830200195 46.02435684204102 15.8480281829834 46.02435684204102 17.15460777282715 C 46.02435684204102 18.46118927001953 45.10805511474609 19.33223915100098 43.73360824584961 19.33223915100098 L 11.66302490234375 19.33223915100098 L 11.66302490234375 19.33223915100098 Z M 18.53528785705566 31.30921936035156 C 17.16083717346191 31.30921936035156 16.24453544616699 30.43816375732422 16.24453544616699 29.13158416748047 C 16.24453544616699 27.82500457763672 17.16083717346191 26.95395278930664 18.53528785705566 26.95395278930664 L 36.86133575439453 26.95395278930664 C 38.23579025268555 26.95395278930664 39.15209197998047 27.82500457763672 39.15209197998047 29.13158416748047 C 39.15209197998047 30.43816375732422 38.23579025268555 31.30921936035156 36.86133575439453 31.30921936035156 L 18.53528785705566 31.30921936035156 L 18.53528785705566 31.30921936035156 Z M 25.40755653381348 42.1973762512207 C 24.03310203552246 42.1973762512207 23.11680030822754 41.32632446289062 23.11680030822754 40.01974105834961 C 23.11680030822754 38.71316146850586 24.03310203552246 37.84210968017578 25.40755653381348 37.84210968017578 L 29.98906707763672 37.84210968017578 C 31.36352157592773 37.84210968017578 32.27982330322266 38.71316146850586 32.27982330322266 40.01974105834961 C 32.27982330322266 41.32632446289062 31.36352157592773 42.1973762512207 29.98906707763672 42.1973762512207 L 25.40755653381348 42.1973762512207 L 25.40755653381348 42.1973762512207 Z">
+                    </path>
+                </svg>
+            </div>
+            <div id="icons_back_light" class="icons_back_light">
+                <svg class="bg_A13_Rectangle_13">
+                    <rect fill="transparent" id="bg_A13_Rectangle_13" rx="0" ry="0" x="0" y="0" width="67" height="67">
+                    </rect>
+                </svg>
+                <svg class="icon" viewBox="-0.425 -0.457 45.223 38.738">
+                    <path fill="rgba(255,255,255,1)" id="icon" d="M 18.25110054016113 37.98810195922852 L 1.582541227340698 21.31954193115234 C 1.526080369949341 21.28252029418945 1.472535610198975 21.23923683166504 1.422900080680847 21.18959999084473 L 1.285199999809265 21.05190086364746 L 0.9999000430107117 21.05190086364746 C 0.4482000172138214 21.05190086364746 0 20.60460090637207 0 20.05200004577637 L 0 19.76670074462891 L -0.13230000436306 19.63440132141113 C -0.3313190937042236 19.43538093566895 -0.428862065076828 19.17327117919922 -0.4250721335411072 18.91236877441406 C -0.428862065076828 18.65169334411621 -0.3313190937042236 18.38982009887695 -0.13230000436306 18.19079971313477 L 0 18.05850028991699 L 0 17.8523998260498 C 0 17.29980087280273 0.4482000172138214 16.85250091552734 0.9999000430107117 16.85250091552734 L 1.205999970436096 16.85250091552734 L 1.422900080680847 16.63560104370117 C 1.47179651260376 16.58670425415039 1.524489402770996 16.54393196105957 1.580023884773254 16.50727653503418 L 18.25110054016113 -0.1638000011444092 C 18.64170074462891 -0.5544000267982483 19.27440071105957 -0.5544000267982483 19.66500091552734 -0.1638000011444092 L 21.22019958496094 1.392300009727478 C 21.61079978942871 1.782900094985962 21.61079978942871 2.415600061416626 21.22019958496094 2.80620002746582 L 7.173900127410889 16.85250091552734 L 43.79759979248047 16.85250091552734 C 44.34930038452148 16.85250091552734 44.79750061035156 17.29980087280273 44.79750061035156 17.8523998260498 L 44.79750061035156 20.05200004577637 C 44.79750061035156 20.60460090637207 44.34930038452148 21.05190086364746 43.79759979248047 21.05190086364746 L 7.253100395202637 21.05190086364746 L 21.22019958496094 35.01900100708008 C 21.61079978942871 35.40959930419922 21.61079978942871 36.04230117797852 21.22019958496094 36.43289947509766 L 19.66500091552734 37.98810195922852 C 19.46969985961914 38.18339920043945 19.21387481689453 38.28105163574219 18.95804977416992 38.28105163574219 C 18.70222473144531 38.28105163574219 18.4463996887207 38.18339920043945 18.25110054016113 37.98810195922852 Z">
+                    </path>
+                </svg>
+            </div>
+            <div id="status_bar_dark" class="status_bar_dark">
+                <svg class="Background" viewBox="0 -44 1049.93 123.192">
+                    <path fill="transparent" id="Background" d="M 0 -44 L 1049.9296875 -44 L 1049.9296875 79.19174957275391 L 0 79.19174957275391 L 0 -44 Z">
+                    </path>
+                </svg>
+                <div id="Battery">
+                    <div id="Border">
+                        <svg style="width:inherit;height:inherit;overflow:visible;">
+                            <rect fill="url(#Border_A13_Group_22_pattern)" width="100%" height="100%"></rect>
+                            <pattern elementId="Border_A13_Group_22" id="Border_A13_Group_22_pattern" x="0" y="0" width="100%" height="100%">
+                                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Border_A13_Group_22_pattern.png" xlink:href="assets/img/mobile/Border_A13_Group_22_pattern.png"></image>
+                            </pattern>
+                        </svg>
+                    </div>
+                    <div id="Cap">
+                        <svg style="width:inherit;height:inherit;overflow:visible;">
+                            <rect fill="url(#Cap_A13_Group_23_pattern)" width="100%" height="100%"></rect>
+                            <pattern elementId="Cap_A13_Group_23" id="Cap_A13_Group_23_pattern" x="0" y="0" width="100%" height="100%">
+                                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Cap_A13_Group_23_pattern.png" xlink:href="assets/img/mobile/Cap_A13_Group_23_pattern.png"></image>
+                            </pattern>
+                        </svg>
+                    </div>
+                    <div id="Capacity">
+                        <svg style="width:inherit;height:inherit;overflow:visible;">
+                            <rect fill="url(#Capacity_A13_Group_24_pattern)" width="100%" height="100%"></rect>
+                            <pattern elementId="Capacity_A13_Group_24" id="Capacity_A13_Group_24_pattern" x="0" y="0" width="100%" height="100%">
+                                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Capacity_A13_Group_24_pattern.png" xlink:href="assets/img/mobile/Capacity_A13_Group_24_pattern.png"></image>
+                            </pattern>
+                        </svg>
+                    </div>
+                </div>
+                <div id="Wifi">
+                    <div id="Wifi_A13_Group_14">
+                        <svg style="width:inherit;height:inherit;overflow:visible;">
+                            <rect fill="url(#Wifi_A13_Group_25_pattern)" width="100%" height="100%"></rect>
+                            <pattern elementId="Wifi_A13_Group_25" id="Wifi_A13_Group_25_pattern" x="0" y="0" width="100%" height="100%">
+                                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Wifi_A13_Group_25_pattern.png" xlink:href="assets/img/mobile/Wifi_A13_Group_25_pattern.png"></image>
+                            </pattern>
+                        </svg>
+                    </div>
+                </div>
+                <div id="Cellular_Connection">
+                    <div id="Cellular_Connection_A13_Group_16">
+                        <svg style="width:inherit;height:inherit;overflow:visible;">
+                            <rect fill="url(#Cellular_Connection_A13_Group_26_pattern)" width="100%" height="100%"></rect>
+                            <pattern elementId="Cellular_Connection_A13_Group_26" id="Cellular_Connection_A13_Group_26_pattern" x="0" y="0" width="100%" height="100%">
+                                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Cellular_Connection_A13_Group_26_pattern.png" xlink:href="assets/img/mobile/Cellular_Connection_A13_Group_26_pattern.png"></image>
+                            </pattern>
+                        </svg>
+                    </div>
+                </div>
+                <div id="Bars___Time_Black">
+                    <svg class="Background_A13_Path_13" viewBox="21 -35 151.19 44.797">
+                        <path fill="rgba(0,0,0,0)" id="Background_A13_Path_13" d="M 21 9.797000885009766 L 172.1898803710938 9.797000885009766 L 172.1898803710938 -35 L 21 -35 L 21 9.797000885009766 Z">
+                        </path>
+                    </svg>
+                    <svg class="__Time" viewBox="12.823 2.89 76.858 28.977">
+                        <path fill="rgba(255,255,255,1)" id="__Time" d="M 22.92879676818848 31.86661529541016 C 29.95293617248535 31.86661529541016 34.12531280517578 26.37362480163574 34.12531280517578 17.07190322875977 C 34.12531280517578 13.56940269470215 33.45543670654297 10.62194442749023 32.173095703125 8.344362258911133 C 30.31658363342285 4.803582668304443 27.12031364440918 2.889648914337158 23.08191108703613 2.889648914337158 C 17.07215690612793 2.889648914337158 12.82322120666504 6.928050518035889 12.82322120666504 12.59329605102539 C 12.82322120666504 17.91403388977051 16.65109062194824 21.78018188476562 21.9144115447998 21.78018188476562 C 25.14895820617676 21.78018188476562 27.77105140686035 20.26817321777344 29.0725269317627 17.64608383178711 L 29.12994194030762 17.64608383178711 C 29.12994194030762 17.64608383178711 29.20649909973145 17.64608383178711 29.22564125061035 17.64608383178711 C 29.26391792297363 17.64608383178711 29.39789390563965 17.64608383178711 29.39789390563965 17.64608383178711 C 29.39789390563965 23.96206665039062 27.0054759979248 27.73251724243164 22.96707344055176 27.73251724243164 C 20.59379768371582 27.73251724243164 18.75641822814941 26.4310417175293 18.12481880187988 24.3448543548584 L 13.20601081848145 24.3448543548584 C 14.02900123596191 28.88087844848633 17.87600898742676 31.86661529541016 22.92879676818848 31.86661529541016 Z M 23.10104942321777 17.85661506652832 C 19.92391777038574 17.85661506652832 17.66547584533691 15.59817314147949 17.66547584533691 12.44018173217773 C 17.66547584533691 9.358747482299805 20.03875541687012 7.004607677459717 23.12018775939941 7.004607677459717 C 26.20162391662598 7.004607677459717 28.57490348815918 9.397026062011719 28.57490348815918 12.51673889160156 C 28.57490348815918 15.59817314147949 26.25904273986816 17.85661506652832 23.10104942321777 17.85661506652832 Z M 42.80641174316406 28.26841735839844 C 44.62464904785156 28.26841735839844 45.86870574951172 26.96694183349609 45.86870574951172 25.2444019317627 C 45.86870574951172 23.50272178649902 44.62464904785156 22.22038650512695 42.80641174316406 22.22038650512695 C 41.00730895996094 22.22038650512695 39.74411010742188 23.50272178649902 39.74411010742188 25.2444019317627 C 39.74411010742188 26.96694183349609 41.00730895996094 28.26841735839844 42.80641174316406 28.26841735839844 Z M 42.80641174316406 13.91391181945801 C 44.62464904785156 13.91391181945801 45.86870574951172 12.6315746307373 45.86870574951172 10.90903472900391 C 45.86870574951172 9.167352676391602 44.62464904785156 7.885017871856689 42.80641174316406 7.885017871856689 C 41.00730895996094 7.885017871856689 39.74411010742188 9.167352676391602 39.74411010742188 10.90903472900391 C 39.74411010742188 12.6315746307373 41.00730895996094 13.91391181945801 42.80641174316406 13.91391181945801 Z M 64.96160888671875 31.19673919677734 L 69.68902587890625 31.19673919677734 L 69.68902587890625 26.04825592041016 L 73.42120361328125 26.04825592041016 L 73.42120361328125 21.87587738037109 L 69.68902587890625 21.87587738037109 L 69.68902587890625 3.578665256500244 L 62.72230529785156 3.578665256500244 C 57.84177398681641 10.92817306518555 53.95648956298828 17.07190322875977 51.46837615966797 21.64620590209961 L 51.46837615966797 26.04825592041016 L 64.96160888671875 26.04825592041016 L 64.96160888671875 31.19673919677734 Z M 56.04267883300781 21.7036247253418 C 59.25808715820312 16.03837776184082 62.12899017333984 11.50235366821289 64.77021789550781 7.597927570343018 L 65.03816986083984 7.597927570343018 L 65.03816986083984 21.99071502685547 L 56.04267883300781 21.99071502685547 L 56.04267883300781 21.7036247253418 Z M 84.7435302734375 31.19673919677734 L 89.68148040771484 31.19673919677734 L 89.68148040771484 3.578665256500244 L 84.76267242431641 3.578665256500244 L 77.54714202880859 8.631452560424805 L 77.54714202880859 13.37800979614258 L 84.41815948486328 8.554895401000977 L 84.7435302734375 8.554895401000977 L 84.7435302734375 31.19673919677734 Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="row">
+            <svg class="bg_A13_Rectangle_14">
+                <rect fill="transparent" id="bg_A13_Rectangle_14" rx="0" ry="0" x="0" y="0" width="375" height="80">
+                </rect>
+            </svg>
+            <div id="Alexa">
+                <span>Alexa</span>
+            </div>
+            <div id="ID4_5_stars">
+                <span>4.5 stars</span>
+            </div>
+            <svg class="divider">
+                <rect fill="rgba(255,255,255,1)" id="divider" rx="0.5" ry="0.5" x="0" y="0" width="327" height="1">
+                </rect>
+            </svg>
+            <svg class="avatar">
+                <pattern elementId="avatar_A13_Rectangle_17" id="avatar_A13_Rectangle_17_pattern" x="0" y="0" width="100%" height="100%">
+                    <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/avatar_A13_Rectangle_17_pattern.png" xlink:href="assets/img/mobile/avatar_A13_Rectangle_17_pattern.png"></image>
+                </pattern>
+                <rect fill="url(#avatar_A13_Rectangle_17_pattern)" id="avatar" rx="12" ry="12" x="0" y="0" width="48" height="48">
+                </rect>
+            </svg>
+            <div id="call">
+                <svg class="bg_A13_Rectangle_18">
+                    <rect fill="rgba(53,58,80,1)" id="bg_A13_Rectangle_18" rx="8" ry="8" x="0" y="0" width="40" height="40">
+                    </rect>
+                </svg>
+                <svg class="phone_1" viewBox="2 2 16 16">
+                    <path fill="rgba(255,255,255,1)" id="phone_1" d="M 16.38112640380859 14.43887233734131 L 14.31053066253662 12.71409606933594 C 14.18102931976318 12.60609245300293 13.89218997955322 12.59045696258545 13.75141429901123 12.68427658081055 L 12.60116195678711 13.45084285736084 C 12.48056316375732 13.53123569488525 12.33868598937988 13.5737829208374 12.19373607635498 13.57302856445312 C 11.96965312957764 13.57193660736084 11.61424541473389 13.53448486328125 11.16935348510742 13.42902278900146 C 10.4004020690918 13.24770259857178 9.673166275024414 12.92123985290527 9.026732444763184 12.4671802520752 C 8.4442138671875 12.05834674835205 7.937106132507324 11.55153656005859 7.527989387512207 10.96932125091553 C 7.073900699615479 10.32308197021484 6.74744701385498 9.596100807189941 6.566174030303955 8.827441215515137 C 6.46068000793457 8.38270092010498 6.423209667205811 8.027417182922363 6.422119617462158 7.803049087524414 C 6.421364784240723 7.658144950866699 6.463927268981934 7.516321659088135 6.544347763061523 7.395763397216797 L 7.311180591583252 6.246275901794434 C 7.406853675842285 6.102636337280273 7.391573429107666 5.819718837738037 7.281351566314697 5.687351703643799 L 5.55561351776123 3.61747407913208 C 5.374090671539307 3.399286031723022 5.150733947753906 3.400376796722412 4.971757888793945 3.619292259216309 L 3.828420639038086 5.016059398651123 C 3.513757467269897 5.400797843933105 3.36424708366394 6.175002098083496 3.511939287185669 6.644106864929199 C 3.520757436752319 6.671656608581543 3.527924776077271 6.699705600738525 3.533401250839233 6.728108882904053 C 3.544314861297607 6.78556489944458 3.578872680664062 6.922661304473877 3.647262334823608 7.130665302276611 C 3.791150093078613 7.559506416320801 3.965977668762207 7.97734260559082 4.170369148254395 8.380884170532227 C 4.846258163452148 9.735100746154785 5.880099296569824 11.17841625213623 7.348649024963379 12.64645576477051 C 8.817200660705566 14.11486053466797 10.26101493835449 15.14834690093994 11.61570358276367 15.82363986968994 C 12.01937484741211 16.02808380126953 12.43735694885254 16.20297241210938 12.86635208129883 16.346923828125 C 13.07479572296143 16.41492462158203 13.21193790435791 16.44983291625977 13.26941204071045 16.46074676513672 C 13.30359268188477 16.4671745300293 13.3372688293457 16.47604751586914 13.37017917633057 16.4872932434082 C 13.81398296356201 16.6392936706543 14.59172916412354 16.48474502563477 14.98169136047363 16.16582870483398 L 16.37930679321289 15.02288913726807 C 16.59975814819336 14.84252071380615 16.60011672973633 14.62141895294189 16.38112640380859 14.43887233734131 Z M 12.94419956207275 11.47405910491943 C 13.62154483795166 11.02241230010986 14.61755466461182 11.07659339904785 15.24178600311279 11.59660816192627 L 17.31274795532227 13.32138538360596 C 18.23309326171875 14.08831787109375 18.22945404052734 15.38908290863037 17.30074310302734 16.14873886108398 L 15.90312671661377 17.29131698608398 C 15.14429569244385 17.91242218017578 13.87327575683594 18.17279434204102 12.94747447967529 17.87969589233398 C 12.76719093322754 17.83843231201172 12.58908367156982 17.78818511962891 12.41381931304932 17.72914123535156 C 11.91733741760254 17.56327056884766 11.43357467651367 17.36152267456055 10.96637058258057 17.12549591064453 C 9.472353935241699 16.38037872314453 7.900128364562988 15.25525569915771 6.319536685943604 13.67521572113037 C 4.739309310913086 12.09517002105713 3.613431453704834 10.52348899841309 2.868425130844116 9.030355453491211 C 2.632295846939087 8.563197135925293 2.430477142333984 8.079483032226562 2.264562129974365 7.58304500579834 C 2.2044837474823 7.40516996383667 2.153609991073608 7.224319934844971 2.112141847610474 7.041210651397705 C 1.83567476272583 6.107729434967041 2.085586547851562 4.848418712615967 2.702180862426758 4.094943046569824 L 3.845518112182617 2.698174476623535 C 4.603620529174805 1.771966934204102 5.907017707824707 1.766512155532837 6.673486709594727 2.686174631118774 L 8.399224281311035 4.756052017211914 C 8.921601295471191 5.382978916168213 8.975439071655273 6.37282657623291 8.521817207336426 7.053208827972412 L 7.893217086791992 7.995414733886719 C 7.910313606262207 8.144511222839355 7.939052581787109 8.31142520904541 7.981614112854004 8.491430282592773 C 8.120747566223145 9.08049201965332 8.37100887298584 9.637617111206055 8.718981742858887 10.13293170928955 C 9.031234741210938 10.57758808135986 9.418336868286133 10.96467876434326 9.86304759979248 11.27696418762207 C 10.35867214202881 11.62473011016846 10.91611385345459 11.87478065490723 11.5054817199707 12.01371002197266 C 11.68554782867432 12.05662155151367 11.8521556854248 12.08498382568359 12.00130081176758 12.10207653045654 L 12.94420146942139 11.47405910491943 Z">
+                    </path>
+                </svg>
+            </div>
+            <div id="message">
+                <svg class="bg_A13_Rectangle_19">
+                    <rect fill="rgba(53,58,80,1)" id="bg_A13_Rectangle_19" rx="8" ry="8" x="0" y="0" width="40" height="40">
+                    </rect>
+                </svg>
+                <svg class="envelope" viewBox="2 8 16 12.444">
+                    <path fill="rgba(255,255,255,1)" id="envelope" d="M 1.99999988079071 9.942885398864746 C 2.000802516937256 8.86854076385498 2.816147327423096 7.998491764068604 3.820728302001953 7.999995708465576 L 16.17927360534668 7.999997615814209 C 17.18363571166992 7.999997615814209 17.99999809265137 8.871885299682617 17.99999809265137 9.942885398864746 L 17.99999809265137 18.50154113769531 C 17.99919509887695 19.57588958740234 17.18385314941406 20.4459342956543 16.17927360534668 20.44443321228027 L 3.820726871490479 20.44443321228027 C 2.816363573074341 20.44443321228027 1.99999988079071 19.57254409790039 1.99999988079071 18.50154685974121 L 1.99999988079071 9.942885398864746 Z M 16.54545402526855 12.87316036224365 L 10.37454319000244 16.8336009979248 C 10.14404773712158 16.9817008972168 9.855948448181152 16.9817008972168 9.625452995300293 16.8336009979248 L 3.454545736312866 12.87277126312256 L 3.454545736312866 18.50115394592285 C 3.454545736312866 18.71232032775879 3.619272470474243 18.88848876953125 3.820726871490479 18.88848876953125 L 16.17927360534668 18.88848876953125 C 16.27583885192871 18.88921165466309 16.36870956420898 18.84882736206055 16.43740272521973 18.77623748779297 C 16.5060977935791 18.70364952087402 16.54497146606445 18.60482215881348 16.54545402526855 18.50154685974121 L 16.54545402526855 12.87277126312256 Z M 15.9625415802002 11.43310546875 C 16.26181983947754 11.24099636077881 16.54545402526855 10.70588207244873 16.54545402526855 10.33605098724365 L 16.54545402526855 9.943272590637207 C 16.54545402526855 9.729593276977539 16.3838005065918 9.556192398071289 16.18399810791016 9.555550575256348 L 3.815999984741211 9.555550575256348 C 3.616197824478149 9.556193351745605 3.45454478263855 9.729594230651855 3.454545736312866 9.943272590637207 L 3.454545736312866 10.33605098724365 C 3.454545736312866 10.70393943786621 3.739999771118164 11.24216079711914 4.037454128265381 11.43271636962891 L 9.999999046325684 15.25976848602295 L 15.9625415802002 11.43310546875 Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div id="Group_767">
+            <svg class="Ellipse_29">
+                <ellipse fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_29" rx="92" ry="92" cx="92" cy="92">
+                </ellipse>
+            </svg>
+            <svg class="Icon_awesome_map_marked_alt" viewBox="0 0 114.914 102.146">
+                <path fill="rgba(42,46,67,1)" id="Icon_awesome_map_marked_alt" d="M 57.45712280273438 0 C 43.57364654541016 0 32.31963348388672 11.25401496887207 32.31963348388672 25.13749313354492 C 32.31963348388672 36.3615837097168 48.74877548217773 56.81871032714844 55.04312896728516 64.24424743652344 C 56.31795883178711 65.74851226806641 58.59828567504883 65.74851226806641 59.87112808227539 64.24424743652344 C 66.16547393798828 56.81871032714844 82.59461975097656 36.3615837097168 82.59461975097656 25.13749313354492 C 82.59461975097656 11.25401496887207 71.34059906005859 0 57.45712280273438 0 Z M 57.45712280273438 33.51665878295898 C 52.82863616943359 33.51665878295898 49.07796096801758 29.76598167419434 49.07796096801758 25.13749313354492 C 49.07796096801758 20.50900077819824 52.82863616943359 16.75832939147949 57.45712280273438 16.75832939147949 C 62.08561325073242 16.75832939147949 65.83628845214844 20.50900268554688 65.83628845214844 25.13749313354492 C 65.83628845214844 29.76598167419434 62.08561325073242 33.51665878295898 57.45712280273438 33.51665878295898 Z M 4.014018535614014 43.08287048339844 C 1.590183973312378 44.05233383178711 0.0005824546096846461 46.39960098266602 0 49.01012802124023 L 0 98.94994354248047 C 0 101.2083206176758 2.280329704284668 102.7524871826172 4.377115726470947 101.9145736694336 L 31.92062568664551 89.37775421142578 L 31.92062568664551 42.87738037109375 C 30.15700721740723 39.68930816650391 28.71459579467773 36.58502578735352 27.68116569519043 33.61640930175781 L 4.014018535614014 43.08287048339844 Z M 57.45712280273438 71.75556945800781 C 54.65010452270508 71.75556945800781 51.99470520019531 70.52263641357422 50.17323303222656 68.37198638916016 C 46.2509880065918 63.74349975585938 42.07936096191406 58.47260284423828 38.30474853515625 53.06604385375977 L 38.30474853515625 89.37576293945312 L 76.6094970703125 102.1440048217773 L 76.6094970703125 53.06803512573242 C 72.83488464355469 58.47260284423828 68.66525268554688 63.74549102783203 64.74101257324219 68.37397766113281 C 62.91954803466797 70.52263641357422 60.2641487121582 71.75556945800781 57.45712280273438 71.75556945800781 Z M 110.5371398925781 32.15205383300781 L 82.99362945556641 44.68887710571289 L 82.99362945556641 102.1460037231445 L 110.9002304077148 90.9837646484375 C 113.3244323730469 90.01473999023438 114.9142227172852 87.66719818115234 114.9142456054688 85.05649566650391 L 114.9142456054688 35.11667633056641 C 114.9142456054688 32.85829162597656 112.6339111328125 31.31413269042969 110.5371398925781 32.15205383300781 Z">
+                </path>
+            </svg>
+        </div>
+        <svg class="Screen_Shot_2019_10_25_at_8_00">
+            <pattern elementId="Screen_Shot_2019_10_25_at_8_00_A13_Rectangle_21" id="Screen_Shot_2019_10_25_at_8_00_A13_Rectangle_21_pattern" x="0" y="0" width="100%" height="100%">
+                <image x="0" y="0" width="100%" height="100%" href="assets/img/mobile/Screen_Shot_2019_10_25_at_8_00_A13_Rectangle_21_pattern.png" xlink:href="assets/img/mobile/Screen_Shot_2019_10_25_at_8_00_A13_Rectangle_21_pattern.png"></image>
+            </pattern>
+            <rect fill="url(#Screen_Shot_2019_10_25_at_8_00_A13_Rectangle_21_pattern)" id="Screen_Shot_2019_10_25_at_8_00" rx="0" ry="0" x="0" y="0" width="1080" height="336">
+            </rect>
+        </svg>
+    </div>
+</body>
+</html>

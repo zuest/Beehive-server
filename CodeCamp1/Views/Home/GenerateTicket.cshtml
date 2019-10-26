@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "Generate Ticket";
+}
+
+<!-- MAIN CONTENT -->
+<div class="main-content" id="content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 clear-padding-xs">
+                <h5 class="page-title"><i class="fa fa-user"></i>ADD</h5>
+                <div class="section-divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 clear-padding-xs">
+                <form id="studentFullInfo" name="studentFullInfo">
+                    <div class="col-md-12 error">
+
+                    </div>
+                    <div class="col-md-12">
+
+                        <div class="dash-item">
+                            <h6 class="item-title"><i class="fa fa-user-secret"></i>Info</h6>
+                            <div class="inner-item">
+                                <div class="dash-form">
+                                    <div class="col-sm-3">
+                                        <label class="clear-top-margin"><i class="fa fa-venus"></i>providerId</label>
+                                        <select name="providerId" id="providerId">
+                                            <option value="">-- Select --</option>
+                                            <option value="1"></option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <label class="clear-top-margin"><i class="fa fa-user-circle-o"></i>ticketNum</label>
+                                        <input name="ticketNum" id="ticketNum" type="text" placeholder="name here" />
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <a id="generateBtn" href="javascript:void(0)"><i class="fa fa-paper-plane"></i> Generate</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="menu-togggle-btn">
+        <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="dash-footer col-lg-12">
+        <p>Copyright HIA</p>
+    </div>
+</div>
+
+
+<!-- Add Modal -->
+<div class="modal fade" id="addStudentModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="descriptionBlockDiv">
+                                <p>
+                                    Are You Sure?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer table-action-box">
+                <button type="button" class="save btn btn-primary" data-dismiss="modal" id="agreeBtn"><i class="fa fa-check"></i>Continue</button>
+                <button type="button" class="cancel btn btn-default" data-dismiss="modal" id="closeBtn"><i class="fa fa-ban"></i>Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade" id="loadModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add - please wait...</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+
+                            <div id="loader" style="text-align: center; display: block; margin-bottom: 20px;">
+                                <img alt="Loading" src="@Url.Content("~/assets/img/loader.gif")" /> Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer table-action-box">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+@section scripts {
+    <script src="/assets/js/student/script.js"></script>
+    <script type="text/javascript">
+
+        //$('#saveBtn').click(saveFunction);
+
+
+        // Wait for the DOM to be ready
+        $(function () {
+
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $('#generateBtn').click(saveFunction);
+
+        $('#agreeBtn').on('click', function () {
+            $('#addStudentModal').modal('hide');
+            $('#agreeBtn').attr({ 'disabled': 'disabled' });
+            // Checking whether FormData is available in browser
+            // replace '#' by server-side script who get the post content
+            //url: '/talia3/Customer/BookNow',
+            //url: '/Customer/BookNow',
+            //console.log($('#studentFullInfo').serialize());
+            $.post('/Home/GenerateTicketRequest', $('#studentFullInfo').serialize(), function (data, status, xhr) {
+                // do something here with response;
+                //console.info(data);
+                //console.info(status);
+                //console.info(xhr);
+            })
+                .done(function (data, status, xhr) {
+                    // do something here if done ;
+                    console.info(data);
+                    //console.info(status);
+                    //console.info(xhr);
+                    $('#agreeBtn').removeAttr('disabled');
+
+
+
+
+                    // maybe the good state to close the modal
+                    // Set a timeout to hide the element again
+                    setTimeout(function () {
+                        $("#myModalBookNow").modal('toggle');
+                    }, 6000);
+                })
+                .fail(function () {
+                    // do something here if there is an error ;
+                    alert('error from server..');
+                    $('#agreeBtn').removeAttr('disabled');
+
+                    $('.loaderSendDiv').css({ 'display': 'none' });
+                    $('.loaderFormDiv').css({ 'display': 'block' });
+                    $('.modal-footer').css({ 'display': 'block' });
+                })
+                .always(function () {
+                    // alert("finished");
+                    //$('.loaderSendDiv').css({ 'display': 'none' });
+                });
+        });
+
+        // Wait for the DOM to be ready
+        $(function () {
+
+        });
+    </script>
+
+
+
+}

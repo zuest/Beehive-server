@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>HIA</title>
+
+    <!-- Styles -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/chartist.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/style.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/customStyle.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="/assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen">
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    <style>
+        .sidebar-nav li a {
+            font-size: 20px;
+        }
+
+        .sidebar-nav .dropdown-menu > li > a {
+            font-size: 18px;
+        }
+
+        table.dataTable thead th {
+            font-size: 14px;
+        }
+
+        table.dataTable tbody td {
+            font-size: 14px;
+            color: #212121;
+        }
+
+        table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+            border-right: 1px dotted;
+        }
+
+        .dash-form label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row dashboard-top-nav">
+        <div class="col-sm-3 logo">
+            <h5><i class="fa fa-book"></i>HIA</h5>
+        </div>
+        @*<div class="col-sm-4 top-search">
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>*@
+        <div class="col-sm-5 notification-area">
+
+
+            @if (Request.IsAuthenticated)
+            {
+                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <ul class="nav navbar-nav navbar-right top-nav-list">
+                        @*<li>
+                                @Html.ActionLink("Hello " + User.FirstName.ToString() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                            </li>*@
+                        <li><a style="font-size: 30px; color:#fff" href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                    </ul>
+                }
+            }
+            else
+            {
+                <ul class="nav navbar-nav navbar-right">
+                    @*<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+                    @*<li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", style = "font-size: 30px; color:#fff" })</li>*@
+                </ul>
+            }
+        </div>
+    </div>
+
+    <div class="parent-wrapper toggled" id="outer-wrapper">
+        <!-- SIDE MENU -->
+        <div class="sidebar-nav-wrapper" id="sidebar-wrapper">
+            <div>
+                <img src="/assets/img/hialogo.png" class="img-responsive logoImg" />
+            </div>
+            <ul class="sidebar-nav">
+
+                <li class="dropdown open">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        <i class="fa fa-users menu-icon"></i> HIA<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="/Home/Add"><i class="fa fa-caret-right"></i>Landing</a>
+                        </li>
+                        <li>
+                            <a href="/Home/GenerateTicket"><i class="fa fa-caret-right"></i>GenerateTicket</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - HIA</p>
+        </footer>
+    </div>
+    @*<div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>*@
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+
+
+    <!-- Scripts -->
+    <script src="/assets/js/jQuery_v3_2_0.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/plugins/owl.carousel.min.js"></script>
+    <script src="/assets/plugins/Chart.min.js"></script>
+    <script src="/assets/plugins/jquery.dataTables.min.js"></script>
+    <script src="/assets/plugins/dataTables.responsive.min.js"></script>
+    <script src="/assets/js/js.js"></script>
+    <script src="/assets/plugins/validation/jquery.validate.min.js"></script>
+    <script src="/assets/plugins/validation/validation_dateITA.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
